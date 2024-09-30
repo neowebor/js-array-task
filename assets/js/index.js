@@ -59,7 +59,8 @@ console.log(arr6);
 */
 
 const arr7 = [1, 2, 3, 4, 5];
-const copyArr7 = arr7.splice(-2, 2);
+const copyArr7 = arr7.slice(3, arr7.length);
+console.log('test');
 console.log(copyArr7);
 
 /* 
@@ -112,18 +113,15 @@ function getEachArrElem(arr) {
     console.log(arr[i]);
   }
 }
-// getEachArrElem([1, 2, 3]);
+getEachArrElem([1, 2, 3]);
 
 /* 
 Створити масив з довільними елементами. За допомогою циклу вивести всі елементи масиву з парними індексами послідовно в консоль
 */
 
 function getEvenArrElem(arr) {
-  debugger
   for(let i = 0; i < arr.length; i += 2) {
-    if(i % 2 === 0) {
-      console.log(arr[i])
-    }
+    console.log(arr[i])
   }
 }
 
